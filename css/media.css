@@ -1,0 +1,155 @@
+@media (max-width: 940px) {
+
+  .nav-list {
+    display: none;
+  }
+  
+  .nav-button {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+  }
+
+  .nav.open .nav-list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 40px;
+    font-size: 34px;
+    line-height: 42px;
+    overflow-y: auto;
+  }
+
+  .nav-button {
+    position: fixed;
+    z-index: 9;
+    top: 50px;
+    right: 30px;
+  }
+
+  .nuv-link {
+    color: #828282;
+  }
+
+  .nav-link.active {
+    color: black;
+  }
+
+  .switch-lang {
+   display: none;
+  }
+   
+  .main h1 {
+    font-size: 47px;
+    line-height: 58px;
+    margin-bottom: 16px;
+    width: 124px;
+    font-weight: bold;
+  }
+
+  .main p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
+    padding-top: 23px;
+  }
+
+  .main br {
+    display: none;
+  }
+
+  .main-group {
+    display: block;
+  }
+  
+  .about h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .about p {
+    max-width: 316px;
+    height: 261px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .skills {
+    padding: 80px 0 90px;
+  }
+
+  .description {
+    padding-top: 50px;
+  }
+
+  .skills h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .cards-group {
+    row-gap: 80px;
+    justify-content: center;
+    padding-top: 70px;
+  }
+
+   .portfolio {
+    padding: 112px 0 96px;
+   }
+
+   .portfolio h2 {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: bold;
+   }
+
+   .portfolio a {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 35px;
+   }
+
+   .portfolio-item {
+    margin-bottom: 75px;
+   }
+
+   .contact {
+    padding: 80px 0 90px;
+   }
+
+   .contact h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42px;
+   }
+
+   .contact p {
+    font-size: 18px;
+    line-height: 22px;
+   }
+
+   .contact button {
+    width: 100%;
+    height: 42px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 40px 0 50px;
+   }
+
+   .icons a {
+    padding-right: 50px;
+    }
+ 
+  }
+ 

@@ -5,25 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test_project</title>
+  <!-- <link rel="stylesheet" type="text/css"  href="./css/reset.css"> -->
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-  <header>
+  <header class="header" data-user="1">
     <div class="container">
-      <ul class="top-menu">
-        <li><a class="menu-link" href="#">Home</a></li>
-        <li><a class="menu-link" href="#">About me</a></li>
-        <li><a class="menu-link" href="#">Skills</a></li>
-        <li><a class="menu-link" href="#">Portfolio</a></li>
-        <li><a class="menu-link" href="#">Contacts</a></li>
-      </ul>
+      <nav id="nav" class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" data-scroll=".main" href="#">Home</a></li>
+          <li><a class="nav-link" data-scroll=".about" href="#">About me</a></li>
+          <li><a class="nav-link" data-scroll=".skills" href="#">Skills</a></li>
+          <li><a class="nav-link" data-scroll=".portfolio" href="#">Portfolio</a></li>
+          <li><a class="nav-link" data-scroll=".contact" href="#">Contacts</a></li>
+        </ul>
+        <button id="nav-btn" class="nav-button">
+          <img id="nav-btn-img" src="./img/nav-icons/open.svg" alt="button-open">
+        </button>
+      </nav>
     </div>
   </header>
 
   <section class="main">
     <div class="container">
-      <div class="main-group">
+      <div class="main-group" data-aos="zoom-in">
         <h1>Denis <br> Novik</h1>
         <p>TexUX | UI designer <br> 24 years old, Minskt</p>
         <div class="switch-lang">
@@ -32,7 +40,12 @@
           <a class="active" href="#">ENG</a>
         </div>
       </div>
-      <img class="main-img" src="./img/main-img.jpg" alt="фото">
+      <div class= "header-img" data-aos="zoom-in">
+        <picture>
+          <source media="(max-width: 900px)" srcset="./img/main-mob.jpg">
+          <img class="main-img" src="./img/main-img.jpg" alt="фото">
+        </picture>
+      </div>
     </div>
   </section>
 
@@ -55,49 +68,57 @@
     <div class="container">
       <h2 class="secton-title">Skills</h2>
       <p class="description">I work in such programs as</p>
-      <div class="cards-group">
+      <div class="cards-group" data-aos="zoom-in">
         <div class="skill-card">
-          <img src="./skills/ps.svg" alt="ps">
+          <div class="skill-img-frame">
+            <img src="./img/skills/ps.svg" alt="ps">
+          </div>
           <p>Adobe Photoshop</p>
           <div class="stars">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star.svg" alt="star">
           </div>
         </div>
         <div class="skill-card">
-          <img src="./skills/ai.svg" alt="ai">
+          <div class="skill-img-frame">
+            <img src="./img/skills/ai.svg" alt="ai">
+          </div>
           <p>Adobe Illustrator</p>
           <div class="stars">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star.svg" alt="star">
-            <img src="./stars/star.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star.svg" alt="star">
+            <img src="./img/stars/star.svg" alt="star">
           </div>
         </div>
         <div class="skill-card">
-          <img src="skills/ae.svg" alt="ae">
-          <p>Adobe <br> After Effects</p>
+          <div class="skill-img-frame">
+            <img src="./img/skills/ae.svg" alt="ae">
+          </div>
+          <p>Adobe After Effects</p>
           <div class="stars">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star.svg" alt="star">
           </div>
         </div>
         <div class="skill-card">
-          <img src="skills/figma.svg" alt="figma">
-          <p>Fifma</p>
+          <div class="skill-img-frame">
+            <img src="./img/skills/figma.svg" alt="figma">
+          </div>
+          <p>Figma</p>
           <div class="stars">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star-black.svg" alt="star">
-            <img src="./stars/star.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star-black.svg" alt="star">
+            <img src="./img/stars/star.svg" alt="star">
           </div>
         </div>
       </div>
@@ -108,17 +129,17 @@
     <div class="container">
       <h2 class="secton-title">Portfolio</h2>
       <div class="portfolio-item">
-        <img src="./portfolio/fashion-store.jpg" alt="store">
+        <img src="./img/portfolio/fashion-store.jpg" alt="store">
           <a href="#">Online fashion store - Homepages</a>
       </div>
 
       <div class="portfolio-item">
-        <img src="./portfolio/reebok.jpg" alt="reebok">
+        <img src="./img/portfolio/reebok.jpg" alt="reebok">
           <a href="#">Reebok Store - Concept</a>
       </div>
 
       <div class="portfolio-item">
-        <img src="./portfolio/concept.jpg" alt="concept">
+        <img src="./img/portfolio/concept.jpg" alt="concept">
           <a href="#">Braun Landing Page - Concept</a>
       </div>
     </div>
@@ -131,16 +152,16 @@
       <button type="button" name="Send-message">Send message</button>
       <div class="icons">
         <a href="#">
-          <img src="./icons/li.svg" alt="in">
+          <img src="./img/icons/li.svg" alt="in">
         </a>
         <a href="#">
-          <img src="./icons/inst.svg" alt="inst">
+          <img src="./img/icons/inst.svg" alt="inst">
         </a>
         <a href="#">
-          <img src="./icons/be.svg" alt="be">
+          <img src="./img/icons/be.svg" alt="be">
         </a>
         <a href="#">
-          <img src="./icons/dr.svg" alt="dr">
+          <img src="./img/icons/dr.svg" alt="dr">
         </a>
       </div>
       <div class="like">
@@ -149,5 +170,7 @@
     </div>
   </section>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
